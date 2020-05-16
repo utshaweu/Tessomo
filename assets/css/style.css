@@ -30,7 +30,7 @@ p,span,strong,a{
 }
 
 .wrap {
-  max-width: 1440px;
+  max-width: 100%;
   margin: auto;
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -75,7 +75,7 @@ p,span,strong,a{
 }
 
 /*--------------------------------------------------------------
-# Header
+# Navbar
 --------------------------------------------------------------*/
 #header {
   height: 70px;
@@ -325,7 +325,7 @@ p,span,strong,a{
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Banner Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
@@ -491,6 +491,11 @@ section {
 --------------------------------------------------------------*/
 .about .content {
   padding-left: 30px;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  margin-left: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 30px;
 }
 
 .about .content h3 {
@@ -655,6 +660,10 @@ section {
 .prob-content{
   background: #fff;
   padding: 25px;
+  transition: all linear .3s;
+}
+.prob-content:hover{
+  transform: translateY(-5px);
 }
 .prob-content h4{
   color: rgb(78, 180, 120);
@@ -714,6 +723,10 @@ section {
   border: 1px dashed rgb(78, 180, 120);
   border-radius: 8px;
   height: 210px;
+  transition: all linear .3s;
+}
+.counter-content:hover{
+  transform: translateY(-5px);
 }
 .counter-content span{
   color: rgb(78, 180, 120);
@@ -743,6 +756,7 @@ section {
 
 .cta p {
   color: #fff;
+  padding: 0 100px;
 }
 .cta span{
   display: block;
@@ -769,7 +783,7 @@ section {
 }
 
 .border-top{
-  margin-top: 80px;
+  margin-top: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 /* =======================================================================================
@@ -784,6 +798,9 @@ section {
   font-size: 17px;
   color: #34964D;
   font-weight: 600;
+}
+.branch ul{
+  padding-inline-start: 0;
 }
 .branch ul li{
   font-family: 'Poppins', sans-serif;
@@ -878,6 +895,10 @@ section {
   font-size: 16px;
   color: #3A3A3A;
   font-weight: 400;
+  margin-block-end: 0;
+}
+.investor-content ul{
+  padding-inline-start: 0;
 }
 .investor-content ul li{
   font-family: "Open Sans", sans-serif;
@@ -885,7 +906,22 @@ section {
   color: #3A3A3A;
   font-weight: 400;
 }
-
+.mrtop-1{
+  margin-top: 10px;
+}
+.investor-content a{
+  font-size: 16px;
+  color: #3A3A3A;
+}
+.investor-content:hover a{
+  color: #f5f5f5;
+}
+.investor-content:hover a strong{
+  color: #f5f5f5;
+}
+.investor-content strong{
+  color: #666666;
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -929,7 +965,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Gallery
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -1047,9 +1083,11 @@ section {
   opacity: 1;
   bottom: calc(50% - 50px);
 }
-
+.vbox-share{
+  display: none;
+}
 /*--------------------------------------------------------------
-# Testimonials
+# Content
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
@@ -1074,6 +1112,10 @@ section {
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.06);
   position: relative;
   background: #ffffff;
+  transition: all linear .3s;
+}
+.content-writer:hover{
+  transform: translateY(-5px);
 }
 .content-writer h3{
   position: absolute;
@@ -1082,6 +1124,10 @@ section {
   font-size: 28px;
   font-weight: 900;
   color: rgb(131, 136, 141,.3);
+  transition: all linear .3s;
+}
+.content-writer:hover h3{
+  color: rgb(131, 136, 141,.6);
 }
 .content-writer h2{
   font-size: 22px;
@@ -1693,7 +1739,7 @@ section {
 }
 
 #footer .footer-newsletter {
-  padding: 50px 0;
+  padding-top: 50px;
   background: #111111;
   text-align: center;
   font-size: 15px;
